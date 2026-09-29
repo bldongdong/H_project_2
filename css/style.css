@@ -34,7 +34,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 h1, h2, h3, p { margin: 0; }
 h1, h2, h3 { letter-spacing: -.04em; }
 fieldset { min-width: 0; padding: 0; margin: 0; border: 0; }
-.site-header { max-width: 1120px; padding: 27px 32px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); }
+.site-header { max-width: 1120px; padding: 27px 32px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); }
 .brand { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 800; line-height: 1.35; }
 .brand-mark { position: relative; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 13px; background: var(--primary); color: var(--on-primary); font-size: 22px; font-weight: 800; letter-spacing: -2px; padding-right: 2px; }
 .brand-mark > span { position: absolute; right: 6px; top: 7px; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
@@ -180,6 +180,27 @@ input:checked ~ .option-check { opacity: 1; }
 .delete-button { color: var(--wrong); }
 .delete-button:hover { background: var(--soft-accent); border-color: var(--accent); }
 .empty-list { font-size: 13px; padding: 30px 0; color: var(--muted); }
+/* 인증 화면과 공통 계정 메뉴 */
+.auth-nav { margin-left: auto; max-width: 100%; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 8px; font-size: 12px; }
+.auth-menu { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 16px; }
+.auth-menu .small-button { display: inline-flex; align-items: center; justify-content: center; }
+.auth-user-email { display: block; max-width: 230px; color: var(--primary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.auth-nav .auth-message { flex-basis: 100%; max-width: 330px; margin: 0; text-align: right; }
+.auth-main { max-width: 520px; margin: auto; padding: 48px 24px 64px; min-height: calc(100vh - 185px); }
+.auth-panel { padding: 32px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.auth-panel .page-heading { margin-bottom: 24px; }
+.auth-panel input { width: 100%; min-height: 48px; padding: 12px 14px; border: 1px solid var(--input-border); border-radius: var(--control-radius); background: var(--background); color: var(--ink); font-size: 16px; }
+.auth-panel input:focus { background: var(--surface); border-color: var(--primary); }
+.auth-panel input::placeholder { color: var(--muted); opacity: 1; }
+.auth-panel .button { width: 100%; margin-top: 28px; }
+.field-help { margin-top: 8px; color: var(--muted); font-size: 12px; }
+.auth-message { margin-top: 20px; color: var(--wrong); font-size: 13px; overflow-wrap: anywhere; }
+.auth-message:empty { display: none; }
+.auth-message.is-success { color: var(--primary); background: var(--soft-green); border-radius: var(--control-radius); padding: 16px; }
+.auth-switch { margin-top: 24px; color: var(--muted); text-align: center; font-size: 14px; }
+.auth-switch a { margin-left: 8px; color: var(--primary); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+.auth-guest { display: block; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: 13px; }
+.auth-guest:hover { color: var(--primary); }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 @media (max-width: 1120px) { footer { margin-left: 32px; margin-right: 32px; } }
 @media (max-width: 850px) { .admin-grid { grid-template-columns: 1fr; } }
@@ -224,6 +245,10 @@ input:checked ~ .option-check { opacity: 1; }
   .review-card h3 { font-size: 16px; }
   .result-actions { flex-direction: column-reverse; }
   .admin-grid { grid-template-columns: 1fr; }
+  .auth-main { padding: 32px 20px 40px; }
+  .auth-panel { padding: 24px 20px; }
+  .auth-nav { flex-basis: 100%; padding-top: 12px; border-top: 1px solid var(--line); }
+  .auth-user-email { max-width: min(230px, 50vw); }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; }
