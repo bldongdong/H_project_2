@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>세븐큐(7Q) · 자격증 선택</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="data/questions.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body data-page="home">
+  <header class="site-header"><a class="brand" href="index.html" aria-label="세븐큐(7Q) 홈"><span class="brand-mark">7Q<span></span></span><span>세븐큐<span class="brand-sub">가볍게 풀고, 확실하게 배우기</span></span></a><span class="header-note">작은 공부의 시작</span></header>
+  <main class="home-main">
+    <section class="intro">
+      <span class="eyebrow"><span class="tiny-dot"></span> 하루의 공부를 여는 일곱 문제</span>
+      <h1>부담 없이 <span class="accent">7문제.</span><br>오늘도 한 걸음 앞으로.</h1>
+      <p>문제를 찾는 시간은 줄이고, 이해하는 시간은 늘려요.<br>자격증을 선택하고 나만의 짧은 학습을 시작하세요.</p>
+    </section>
+    <section class="selection-section" aria-labelledby="select-title">
+      <div class="section-heading"><h2 id="select-title">어떤 자격증을 공부할까요?</h2><span>01 <span class="muted">/ 자격증 선택</span></span></div>
+      <form id="start-form">
+        <fieldset class="certificate-grid"><legend class="sr-only">학습할 자격증</legend>
+          <label class="certificate-card"><input type="radio" name="certificate" value="bigdata" required><span class="card-top"><span class="subject-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 26V16h4v10M14 26V6h4v20M22 26V11h4v15"/></svg></span><span class="selection-circle"></span></span><span class="card-category">DATA ANALYSIS</span><strong>빅데이터분석기사</strong><span class="card-description">데이터 속에서 의미를 찾는 연습</span><span class="card-bottom"><span>데이터 분석 · 통계 · 모델링</span><span>↗</span></span></label>
+          <label class="certificate-card"><input type="radio" name="certificate" value="information" required><span class="card-top"><span class="subject-icon purple"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="5" width="24" height="18" rx="3"/><path d="m12 11-4 3 4 3m8-6 4 3-4 3M11 28h10M16 23v5"/></svg></span><span class="selection-circle"></span></span><span class="card-category">INFORMATION TECHNOLOGY</span><strong>정보처리기사</strong><span class="card-description">탄탄한 개발 지식을 쌓는 연습</span><span class="card-bottom"><span>소프트웨어 · 데이터베이스 · 네트워크</span><span>↗</span></span></label>
+        </fieldset>
+        <button class="button primary start-button" type="submit">7문제 풀기 <span aria-hidden="true">→</span></button>
+        <p class="under-button">회원가입 없이, 바로 시작할 수 있어요.</p>
+        <p id="message" class="message" role="status"></p>
+      </form>
+    </section>
+    <section class="how-it-works" aria-label="학습 방법"><div><span class="step-number">01</span><div><h3>가볍게 풀기</h3><p>랜덤으로 만나는 7문제</p></div></div><div><span class="step-number">02</span><div><h3>바로 확인하기</h3><p>제출 즉시 확인하는 채점 결과</p></div></div><div><span class="step-number">03</span><div><h3>틀린 만큼 배우기</h3><p>오답 해설로 채우는 부족한 개념</p></div></div></section>
+  </main>
+  <footer>세븐큐(7Q)<span>오늘의 일곱 문제가 내일의 실력이 되도록.</span><small>첫 버전 · 샘플 문제와 Mock 해설로 학습합니다.</small></footer>
+</body>
+</html>

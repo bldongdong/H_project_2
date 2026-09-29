@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>7문제 풀이 · 세븐큐(7Q)</title><link rel="stylesheet" href="css/style.css"><script src="data/questions.js" defer></script><script src="js/app.js" defer></script></head>
+<body data-page="quiz">
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">7Q<span></span></span><span>세븐큐<span class="brand-sub">가볍게 풀고, 확실하게 배우기</span></span></a><a class="text-link" href="index.html">자격증 선택</a></header>
+  <main class="study-main" id="quiz-content">
+    <div class="page-heading"><span class="eyebrow">한 번에 일곱 문제, 차근차근</span><h1 id="certificate-name">7문제 풀이</h1><p>정답이라고 생각하는 보기를 하나 선택하세요.</p></div>
+    <section class="quiz-panel" aria-label="문제 풀이">
+      <div class="quiz-progress"><strong id="question-counter"></strong><span id="answered-count" class="muted"></span></div>
+      <progress id="quiz-progress" value="0" max="7" aria-label="답변한 문제 수"></progress>
+      <form id="quiz-form"><fieldset class="question-fieldset"><legend id="question-title" tabindex="-1"></legend><div id="answer-options" class="answer-options"></div></fieldset></form>
+      <nav class="quiz-navigation" aria-label="문제 이동"><button type="button" id="previous" class="button secondary">← 이전 문제</button><button type="button" id="next" class="button secondary">다음 문제 →</button></nav>
+    </section>
+    <div class="submit-row"><p>7문제를 모두 풀었다면 결과를 확인해 보세요.</p><button id="grade" class="button primary" type="button">채점하기 <span aria-hidden="true">→</span></button></div>
+    <p id="message" class="message" role="status"></p>
+  </main>
+  <footer>세븐큐(7Q)<span>정답보다 중요한 건, 한 가지 더 알아가는 것.</span></footer>
+</body>
+</html>

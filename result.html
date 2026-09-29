@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>채점 결과 및 오답 · 세븐큐(7Q)</title><link rel="stylesheet" href="css/style.css"><script src="data/questions.js" defer></script><script src="js/app.js" defer></script></head>
+<body data-page="result">
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">7Q<span></span></span><span>세븐큐<span class="brand-sub">가볍게 풀고, 확실하게 배우기</span></span></a><a class="text-link" href="index.html">자격증 선택</a></header>
+  <main class="study-main" id="result-content">
+    <div class="page-heading"><span class="eyebrow" id="result-certificate"></span><h1>일곱 문제, 수고했어요.</h1><p>결과를 확인하고, 헷갈렸던 개념을 내 것으로 만들어 보세요.</p></div>
+    <section class="result-panel" aria-labelledby="score-title"><div class="score-heading"><span class="score-icon" aria-hidden="true">✓</span><h2 id="score-title"></h2><p id="score-description" class="muted"></p></div><div class="score-counts"><div><span>정답</span><strong id="correct-count" class="accent"></strong></div><div><span>오답</span><strong id="wrong-count" class="wrong-color"></strong></div></div><div id="question-results" class="question-results" aria-label="문제별 채점 결과"></div></section>
+    <section class="review-section" aria-labelledby="review-title"><div class="section-heading"><h2 id="review-title">틀린 문제 다시 보기</h2><span id="review-count" class="muted"></span></div><p class="review-intro">해설은 미리 작성된 Mock Data이며, 실제 AI를 호출하지 않습니다.</p><div id="wrong-answers"></div></section>
+    <div class="result-actions"><a href="index.html" class="button secondary">자격증 다시 선택</a><button type="button" class="button primary" id="restart">새로운 7문제 풀기 →</button></div><p id="message" class="message" role="status"></p>
+  </main><footer>세븐큐(7Q)<span>오늘의 일곱 문제가 내일의 실력이 되도록.</span></footer>
+</body>
+</html>
